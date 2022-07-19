@@ -1,0 +1,18 @@
+.centrar-v {
+    display: flex;
+    align-items: center;
+}
+
+.centrar-h {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: 10rem;
+    height: 100%;
+    background-color: #0f3971;
+    position: fixed;
+    /* position: relative; */
+    margin-top: 3.5rem;
+}

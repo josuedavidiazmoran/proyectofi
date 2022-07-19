@@ -1,0 +1,24 @@
+.cuerpo {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100vh;
+}
+
+.fondo {
+    /* background: url(https://media.discordapp.net/attachments/737447127692738694/997282943791804446/upeuoficial-14072022-0001.jpg); */
+    /* background-size: contain; */
+    /* background-size: 100vh; */
+    background-color: rgb(89, 131, 146);
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    height: 8rem;
+    width: fit-content;
+}

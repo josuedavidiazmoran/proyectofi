@@ -1,0 +1,44 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+<div class="cuerpo list-h">
+    <div class="registro list-v centrar-h">
+        <div class="titulo list-v centrar-h">
+            <div>
+                <h3>Registrar Organización</h3>
+            </div>
+            <div class="sub list-h">
+                <p><strong>estudiante: </strong>{{estudiante}}</p>
+                <p><strong>código estudiante: </strong>{{codigo}}</p>
+            </div>
+        </div>
+        <div class="formulario list-h">
+            <div class="mb-3 inputs">
+                <label for="formGroupExampleInput" class="form-label">Titulo Documental</label>
+                <input type="text" class="form-control" id="formGroupExampleInput"
+                    placeholder="Inserte título del documento">
+            </div>
+            <div class="mb-3 inputs">
+                <label for="formGroupExampleInput2" class="form-label">Descripcion</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2"
+                    placeholder="Descripción de la solicitud">
+            </div>
+            <div class="mb-3 inputs">
+                <label for="formGroupExampleInput2" class="form-label">Archivo</label>
+                <input type="file" class="form-control" id="formGroupExampleInput2">
+            </div>
+            <div class="mb-3 inputs">
+                <label for="formGroupExampleInput2" class="form-label">Elegir Ciclo</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Elegir Ciclo</option>
+                    <option value="1">V Ciclo</option>
+                    <option value="2">VI Ciclo</option>
+                    <option value="3">VII Ciclo</option>
+                    <option value="3">VIII Ciclo</option>
+                    <option value="3">IX Ciclo</option>
+                    <option value="3">X Ciclo</option>
+                </select>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary">Registrar</button>
+    </div>
+</div>
