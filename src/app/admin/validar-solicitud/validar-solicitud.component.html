@@ -1,1 +1,47 @@
-<p>validar-solicitud works!</p>
+<app-header></app-header>
+<app-navbar></app-navbar>
+<div class="cuerpo list-h">
+    <div class="registro list-v centrar-h">
+        <div class="titulo list-v centrar-h">
+            <div>
+                <h3>{{titulo}}</h3>
+            </div>
+        </div>
+        <div class="formulario list-h">
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre Alumno</th>
+                        <th scope="col">Fecha Registro</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Visualizar</th>
+                        <th scope="col">Tutor Academico</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let p of personas">
+                        <th>{{p.id}}</th>
+                        <td>{{p.name}}</td>
+                        <td><span class="material-icons-outlined">
+                                calendar_month
+                            </span>
+                            {{p.date}}
+                        </td>
+                        <td>{{p.status}}</td>
+                        <td>OJO</td>
+                        <td>
+                            <select class="form-select" aria-label="Default select example">
+                                <option>Asignar Tutor</option>
+                                <option *ngFor="let t of tutores">{{t.name}}</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <button type="button" class="btn btn-primary">Registrar</button>
+    </div>
+</div>
